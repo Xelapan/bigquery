@@ -2,9 +2,11 @@ import os
 import datetime
 import subprocess
 
+from logger import Logger
+
 
 class Base:
-
+    logger = Logger()
     def __init__(self):
         hoy = datetime.datetime.today()
         self.hora_actual = hoy.hour
@@ -25,6 +27,7 @@ class Base:
                     subprocess.run(['python', ruta_completa])
         except Exception as e:
             print(f"Error: {e}")
+            self.logger.log(f"Excepción en ejecutar script carpeta (base): {e}")
 
 
     def ejecutar_script_carpeta_desatendido(self, nombre_carpeta):
@@ -41,6 +44,7 @@ class Base:
                     subprocess.Popen(['python', ruta_completa])
         except Exception as e:
             print(f"Error: {e}")
+            self.logger.log(f"Excepción en ejecutar carpeta destendido (base): {e}")
 
     def inicio(self):
         try:
@@ -54,3 +58,6 @@ class Base:
                 self.ejecutar_script_carpeta_desatendido('Recurrente')
         except Exception as e:
             print(f"Error: {e}")
+            self.logger.log(f"Excepción en inicio (base): {e}")
+base = Base()
+base.inicio()
