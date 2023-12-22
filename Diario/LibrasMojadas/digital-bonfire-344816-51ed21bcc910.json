@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "digital-bonfire-344816",
+  "private_key_id": "51ed21bcc910c94c865c26b87aefab2d8ad73aae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCpL4JMPM5gBwG8\neiIWj9q+TaEsJVg2y8PLDRWe4qwYEpWycimmqn+I0dKbrUEmjrEuKRe486KOuSzy\no1R2uVJTN9EjwNw5blicih9uHJeqN6vlKkxsv+2+N3xJld/UBCv5WF63sWJBQOHT\nuuak/w+e8u6dCKkqWSTVRgZUE+DY9lzAN0ewCx2hiEff0bYc9ZOpVD039DinQ4G9\nxplsm0AY8W5VUqZWpG+iX+vc8rFLp//9ldaiA3tK09++G4ZC+ik2tyLwJicJaFM6\nslva64syloxZbhepfChBjAVT8wuYXndIfpssJLjvGFrlUREgUzPCugVq8USJQ6Fx\nX/o2uugbAgMBAAECggEABD7ppC7PzF/LTrGPSBsAFaUuau8yUYhiN3xH6J7Y9sRb\nTAkgESCs5qrCqvQkHcBC+LJAotGVE26DjutDuV8D4+Fott77fS15vSPyOfnZty8t\nJH51QIgTLUzd1PLqlRAtvP+CEQC7Qyv0/t1Ciy14yje1KUJdtxmu753m7BaQ8/Y1\nmyGqidIJVPOH+3ZBPIwK4zL6cpOPlu/VdSCB/mm0vsQqYwF4wk/2axoHCTkdLC3A\naWhCoPC9yj+TjrVZdclbhb7yBNeJfzACz3CriBJym4omi+yeKXl5X2CHO/PhZIYk\ndmZA29KoWHpbPXL1Xihi0Zc0zhdvda7Bb0g91QvjkQKBgQDpkNQ1txOP3EhhiGeD\nDqUliDo6/cl73N02ah5g+cKJGK7nzwuNSYyCzcHrV/TY3KW7XCl2RKhaBTc9g+sL\n94E1tVnQ4EN0+lPBW+BXzNNnjbBWwQsJ6ENYNcBHlZe7JUn0fn6u51fpOmKNx/5h\nu1nYT9p/cCCt3J0OIMpgYDxchwKBgQC5b6FHmP6I1+XJPDC0v0AE0ThCvM/PLyVg\nczVhZewLFbPEMGDejwEwh8IXrEwGuKUyzy9arZB1K98uKxr4nQMSkXrT6T+e2jwA\nrZxRxFE16NqtcAv6O0/STN/8I1vUy/q56QTqY5dX/INpu7+euKaawH0xGgMXLMXY\nASWq3PiwzQKBgAzpc8HQcCVo0RuLNeW53olXoZh3RTcyu4vxi+JijE2V7r1j5ciW\nw0zL4SeIgkGm2Qaljqk6HHB1j1s4Ors7oIn+j4uLik8iM5Uh5iIUca9s1s3E+D5A\n99AdkJakf3HaGt+ISqqSoXqEPsSFxNtURyA9MeAPq87QvmH0kBuJ1mxrAoGAWvfO\nMKd3Rn5TNZMXebPQngxdAzBI6aSBO32JFEzBrPZqh7YL72JL/Ri8OIzHhwyRzgkh\ne+RlV3W8OJPg2VF9LmC71rU4Bp+ci+CfLOWXyVB/5lFvLsRl9g7MWo6mABBI4WbU\niH9uwTUY6oe2CxEeehAv2iSem4HVVI/LgLSCM4kCgYBSNq0c+Gk9oSFoaS5DF/2i\nj9Je5PAqXjgb15inzfoLBERDphfHoaOnOiMZF1tcCjLU8HnMD10GgivgGxdNL5Bj\nHrrjWpHJSh6yMzE20R5YDJ09QlfN45gSzB9WsBPcVjMxQMGFG89MMBlqSNPzfEqK\n2d7WvUeJ3I6lxqbLC+xtuA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "g-vault@digital-bonfire-344816.iam.gserviceaccount.com",
+  "client_id": "117052604583464719808",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/g-vault%40digital-bonfire-344816.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
