@@ -1,0 +1,5 @@
+*.log
+logs/
+*.json
+digital-bdds.json
+digital-bonfire-344816-9c1df57c7578.json
