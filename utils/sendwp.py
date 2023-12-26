@@ -19,7 +19,3 @@ def send_message(msj, phone_number):
     except Exception as e:
         print(f"Error: {e}")
 
-
-msj = "Hola, este es un mensaje de prueba desde Python debe llegar Domingo"
-# send_message(msj, "50252009468")
-send_message(msj, "50242160282")
