@@ -7,24 +7,10 @@ import os
 from pandas_gbq import to_gbq
 from google.cloud import bigquery
 import utils.bdds as bdds
-========
-import os
-from datetime import datetime, timedelta
-from google.cloud import storage
-import pymysql
-import pymssql
-import pandas as pd
-from pandas_gbq import to_gbq
-from google.cloud import bigquery
->>>>>>>> e4e1bb054c6f42a0c7f33b84d5ae139731f1af49:utils/LibrasMojadas.py
-
 current_directory = os.getcwd()
 print(current_directory)
 
-<<<<<<<< HEAD:Domingo/LibrasMojadas.py
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = bdds.GetGCP()
-========
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = current_directory + "\\digital-bonfire-344816-51ed21bcc910.json"
 
 
 
