@@ -1,10 +1,5 @@
-import requests
 import http.client
 import ssl
-import urllib.parse
-
-msj = "Hola, este es un mensaje de prueba  debe llegar a diario por la noche"
-
 
 def send_message(msj, phone_number):
     try:

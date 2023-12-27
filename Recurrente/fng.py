@@ -1,15 +1,11 @@
 # Description: Script para enviar el valor del indice de miedo y codicia de CNN
 import requests
 from bs4 import BeautifulSoup
-import http.client
-import ssl
 import json
 import shelve
 import datetime
-import time
 import os
-import utils.bdds as bdds
-import utils.sendwp as sendwp
+from utils import sendwp
 
 def sendFnG():
     try:
