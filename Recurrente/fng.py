@@ -25,11 +25,11 @@ def sendFnG():
                 value = db.get('key', -1)
                 if value != score:
                     db['key'] = score
-                    sendwp(str(score) + "  " + rating, "50252009468")
-                else:                    
-                    sendwp("Same Score: " + str(score) + "  " + rating, "50252009468")
+                    sendwp.send_message(str(score) + "  " + rating, "50252009468")
+                #else:              
+                    #sendwp.send_message("Same Score: " + str(score) + "  " + rating, "50252009468")
         else:
-            sendwp("Error " + "\n" + soup.text[:75], "50252009468")
+            sendwp.send_message("Error " + "\n" + soup.text[:75], "50252009468")
     except Exception as e:
         print(f"Error: {e}")
 
@@ -51,7 +51,6 @@ def is_weekday_and_office_hours():
     except Exception as e:
         print(f"Error: {e}")
     return False
-
 
 if is_weekday_and_office_hours():
     sendFnG()

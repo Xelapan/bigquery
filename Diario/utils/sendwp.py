@@ -1,10 +1,10 @@
 import http.client
 import ssl
+from utils.logger import Logger
 
-def send_message(msj, phone_number):
+def send_message(msj, phone_number): 
+    logger = Logger() 
     try:
-        
-        print("Estoy en sendwp.py")
         conn = http.client.HTTPSConnection("api.ultramsg.com", context=ssl._create_unverified_context())
         payload = "token=2v27xloy7ejs271p&to=%2B" + phone_number + "&body=" + msj
         payload = payload.encode('utf8').decode('iso-8859-1')
@@ -12,7 +12,7 @@ def send_message(msj, phone_number):
         conn.request("POST", "/instance46411/messages/chat", payload, headers)
         res = conn.getresponse()
         data = res.read()
-        print(data.decode("utf-8"))
+      #  print(data.decode("utf-8"))
     except Exception as e:
-        print(f"Error: {e}")
+        Logger.log(f"sendwp.py Error: {e}")
 
