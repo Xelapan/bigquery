@@ -19,6 +19,7 @@ def ejecutar_script_carpeta(nombre_carpeta):
                 ruta_completa = os.path.join(path_carpeta, archivo)
                 print(f"Ejecutando {archivo}...")
                 subprocess.run(['python', ruta_completa])
+                time.sleep(120)
     except Exception as e:
         print(f"Error: {e}")
         logger.log(f"Excepción en ejecutar script carpeta (base): {e}")
@@ -61,4 +62,6 @@ while True:
         print(f"Error: {e}")
         logger.log(f"Excepción en inicio (base): {e}")
     finally:
-        time.sleep(30) # dormir 30 segundos
+        if dia_semana == 6:  # Domingo
+            time.sleep((60*60)*23) # dormir 60 segundos *60 min *23 horas = 2 horas
+        time.sleep(60*120) # dormir 60 segundos *120 min = 2 horas

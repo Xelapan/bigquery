@@ -27,7 +27,12 @@ schema = 'dw'
 try:
     # Initialize a BigQuery client
     client = bigquery.Client()
-    
+ 
+    #
+    #
+    # Borrar datos en GCP
+    #
+    #   
     #Borrar los ultimos 60 dias de informacion de BigQUery
     sql_delete = f"""DELETE FROM {project_id}.{dataset_id}.{table_id} 
             WHERE
@@ -55,6 +60,11 @@ try:
 
     fecha = date_value.strftime('%Y-%m-%d')
 
+    #
+    #
+    # Cargar datos de BDD local
+    #
+    #
     qry = f"""Select 
             fechaproduccion,  year(fechaproduccion) year, month(fechaproduccion) month, 
             case WHEN (WEEK(fechaproduccion,3) >= 52 AND DAYOFYEAR(fechaproduccion) <= 3 ) THEN 1 ELSE WEEK(fechaproduccion,3) END as week,
@@ -96,6 +106,11 @@ try:
     #change fechaprodduccion to datetime column type
     loaded_data_produccion[Fecha_obtener_Datos] = pd.to_datetime(loaded_data_produccion[Fecha_obtener_Datos])
 
+    #
+    #
+    # Cargar datos a GCP
+    #
+    #
     #Cargar desde un dia despues de la ultima fecha cargada
     # Write the DataFrame to a BigQuery table
     to_gbq(loaded_data_produccion, destination_table=f'{project_id}.{dataset_id}.{table_id}', project_id=project_id, if_exists='append')
