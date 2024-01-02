@@ -5,7 +5,10 @@ import json
 import shelve
 import datetime
 import os
+from utils.logger import Logger
 from utils import sendwp
+
+logger = Logger() 
 
 def sendFnG():
     try:
@@ -31,7 +34,7 @@ def sendFnG():
         else:
             sendwp.send_message("Error " + "\n" + soup.text[:75], "50252009468")
     except Exception as e:
-        print(f"Error: {e}")
+        logger.log(f"Excepción en fng.py: {e}")
 
 
 def is_weekday_and_office_hours():
@@ -49,6 +52,7 @@ def is_weekday_and_office_hours():
                 return True
         exit()
     except Exception as e:
+        logger.log(f"Excepción en fng.py: {e}")
         print(f"Error: {e}")
     return False
 

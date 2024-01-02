@@ -64,4 +64,4 @@ while True:
     finally:
         if dia_semana == 6:  # Domingo
             time.sleep((60*60)*23) # dormir 60 segundos *60 min *23 horas = 2 horas
-        time.sleep(60*120) # dormir 60 segundos *120 min = 2 horas
+        time.sleep(60*60) # dormir 60 segundos *XXX min = Y horas
